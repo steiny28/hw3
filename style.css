@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1d1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#tableContainer {
+    overflow: auto;
+    max-height: 400px;
+    margin-top: 20px;
+    border: 1px solid #bbc9e9;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #89ccda;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    table-layout: auto;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #89ccda;
+    text-align: center;
+    font-size: 16px;
+    word-wrap: break-word;
+    min-width: 50px; 
+}
+
+th {
+    background-color: #fb7279; 
+    color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+th:first-child {
+    left: 0;
+    z-index: 3;
+}
+
+tr:nth-child(even) {
+    background-color: #E6E6FA; 
+}
+
+tr:nth-child(odd) {
+    background-color: #FFB6C1; 
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+th, td:first-child {
+    position: sticky;
+    left: 0;
+    background-color:#89ccda;
+    z-index: 1;
+}
